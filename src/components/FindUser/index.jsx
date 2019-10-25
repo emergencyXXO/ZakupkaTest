@@ -41,6 +41,7 @@ class FindUser extends React.PureComponent {
 						</thead>
 						{this.props.UserData.map(el => (
 							<Users
+								{...this.props}
 								key={el.id}
 								id={el.id}
 								first_name={el.first_name}
@@ -49,9 +50,9 @@ class FindUser extends React.PureComponent {
 								phone={el.phone}
 								website={el.website}
 								link={el._links}
-								getCurrentUseThunkCreator={this.props.getCurrentUseThunkCreator}
+								// getCurrentUseThunkCreator={this.props.getCurrentUseThunkCreator}
 								currentPage={this.props._meta.currentPage}
-								deleteUserThunkCreator={this.props.deleteUserThunkCreator}
+								// deleteUserThunkCreator={this.props.deleteUserThunkCreator}
 							/>
 						))}
 					</table>

@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { deleteUserThunkCreator, getUserThunkCreator } from '../../reducer/UserPageReducer';
 import FindUser from './index';
 import { getCurrentUseThunkCreator } from '../../reducer/ProfilePageReducer';
+import { setNewUserId } from '../../reducer/AddNewUserPageReducer';
 
 let mapStateToProps = state => {
 	return {
@@ -18,5 +19,6 @@ export default connect(
 		getUserThunkCreator,
 		deleteUserThunkCreator,
 		getCurrentUseThunkCreator,
+		setNewUserId,
 	},
 )(FindUser);

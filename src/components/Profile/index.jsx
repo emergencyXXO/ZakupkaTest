@@ -1,17 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import cls from './style.module.scss';
 
 import Preloader from '../Preloader/';
+import { Redirect } from 'react-router-dom';
 
 let Profile = props => {
+	let [redirect, SetRedirect] = useState(false);
+
+	let renderRedirect = () => {
+		if (redirect) {
+			return <Redirect to={`/user/${props.id}/edit`} />;
+		}
+	};
+
 	return (
 		<>
+			{renderRedirect()}
 			{props.isFetching ? <Preloader /> : null}
 			<div className={cls.profile_page}>
 				<div className={`${cls.top} line`}>
 					<p className={cls.had}>{`${props.UserData.first_name} ${props.UserData.last_name}`}</p>
 					<div>
-						<button to="/" className="btn btn-primary btn-xs pull-right gutter-sm-right">
+						<button
+							onClick={async () => {
+								await props.getCurrentUseThunkCreator(props.UserData.id);
+								await props.setNewUserId(false);
+								SetRedirect(true);
+							}}
+							className="btn btn-primary btn-xs pull-right gutter-sm-right"
+						>
 							Update
 						</button>
 						<button

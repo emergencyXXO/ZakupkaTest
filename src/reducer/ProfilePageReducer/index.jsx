@@ -5,13 +5,7 @@ const TOGGLE_FETCHING = 'TOGGLE_FETCHING';
 const NO_FIND = 'NO_FIND';
 
 let InitialState = {
-	UserData: {
-		_links: {
-			avatar: {
-				href: '',
-			},
-		},
-	},
+	UserData: {},
 	isFetching: false,
 	noFind: false,
 };
@@ -32,7 +26,7 @@ let ProfilePageReducer = (state = InitialState, action) => {
 		case NO_FIND:
 			return {
 				...state,
-				noFind: true,
+				noFind: action.noFind,
 			};
 
 		default:
@@ -42,7 +36,7 @@ let ProfilePageReducer = (state = InitialState, action) => {
 
 export const SetCurrentUser = user => ({ type: SET_CURRENT_USERS, user });
 export const SetIsFetching = isFetching => ({ type: TOGGLE_FETCHING, isFetching });
-export const SetNoFind = () => ({ type: NO_FIND });
+export const SetNoFind = noFind => ({ type: NO_FIND, noFind });
 
 export const getCurrentUseThunkCreator = userId => async dispatch => {
 	dispatch(SetIsFetching(true));
@@ -64,7 +58,7 @@ export const deleteCurrentUserThunkCreator = userId => async dispatch => {
 	try {
 		if (response.status === 200) {
 			dispatch(SetIsFetching(false));
-			dispatch(SetNoFind());
+			dispatch(SetNoFind(true));
 		}
 	} catch (err) {
 		dispatch(SetIsFetching(false));

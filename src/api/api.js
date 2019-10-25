@@ -41,4 +41,23 @@ export const UserApi = {
 			tokken,
 		);
 	},
+	updateUser(id, first_name, last_name, gender, dob, phone, status, email, website, avatar, about, address) {
+		return instance.put(
+			`/users/${id}`,
+			{
+				first_name,
+				last_name,
+				gender,
+				dob,
+				phone,
+				status,
+				email,
+				website,
+				avatar,
+				about,
+				address,
+			},
+			tokken,
+		);
+	},
 };

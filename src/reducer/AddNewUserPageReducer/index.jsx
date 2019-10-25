@@ -78,4 +78,49 @@ export const addNewUserThunkCreator = (
 	}
 };
 
+export const updateUserThunkCreator = (
+	id,
+	first_name,
+	last_name,
+	gender,
+	dob,
+	phone,
+	status,
+	email,
+	website,
+	avatar,
+	about,
+	address,
+) => async dispatch => {
+	dispatch(setPending(true));
+
+	let response = await UserApi.updateUser(
+		id,
+		first_name,
+		last_name,
+		gender,
+		dob,
+		phone,
+		status,
+		email,
+		website,
+		avatar,
+		about,
+		address,
+	);
+
+	try {
+		if (response.status === 200) {
+			dispatch(SetCurrentUser(response.data.result));
+			dispatch(setNewUserId(response.data.result.id));
+			dispatch(setPending(false));
+			if (response.data._meta.code === 422) {
+				alert(response.data._meta.message);
+			}
+		}
+	} catch (err) {
+		alert(err);
+	}
+};
+
 export default AddNewUserPageReducer;

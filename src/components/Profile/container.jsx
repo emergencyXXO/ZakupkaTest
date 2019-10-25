@@ -1,14 +1,14 @@
 import { connect } from 'react-redux';
 import React from 'react';
 import Profile from './index';
-import { deleteCurrentUserThunkCreator, getCurrentUseThunkCreator } from '../../reducer/ProfilePageReducer';
+import { deleteCurrentUserThunkCreator, getCurrentUseThunkCreator, SetNoFind } from '../../reducer/ProfilePageReducer';
 import { Redirect, withRouter } from 'react-router-dom';
 import { compose } from 'redux';
+import { setNewUserId } from '../../reducer/AddNewUserPageReducer';
 
 class ContainerProfile extends React.Component {
-	componentDidMount() {
-		let userId = this.props.match.params.userId;
-		this.props.getCurrentUseThunkCreator(userId);
+	componentWillUnmount() {
+		this.props.SetNoFind(false);
 	}
 
 	componentDidUpdate(prevProps) {
@@ -43,6 +43,8 @@ export default compose(
 		{
 			getCurrentUseThunkCreator,
 			deleteCurrentUserThunkCreator,
+			SetNoFind,
+			setNewUserId,
 		},
 	),
 )(ContainerProfile);
