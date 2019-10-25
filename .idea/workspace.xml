@@ -80,8 +80,8 @@
           <file leaf-file-name="index.jsx" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/FindUser/index.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="288">
-                  <caret line="43" column="46" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
+                <state relative-caret-position="216">
+                  <caret line="39" column="33" lean-forward="true" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                     <marker date="1572006964348" expanded="true" signature="1707:1765" ph="..." />
@@ -270,7 +270,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-1" />
     <option name="y" value="38" />
     <option name="width" value="1924" />
@@ -359,7 +359,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.gitignore" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="C:\Users\jekap\Desktop\Poberezjnui\React_curse\socnet\node_modules\eslint" />
@@ -367,7 +367,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\jekap\Desktop\Poberezjnui\React_curse\socnet\node_modules\prettier" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -547,7 +547,7 @@
       <workItem from="1571650681211" duration="6000" />
       <workItem from="1571844022774" duration="32568000" />
       <workItem from="1571925044169" duration="17649000" />
-      <workItem from="1571988098018" duration="14904000" />
+      <workItem from="1571988098018" duration="15354000" />
     </task>
     <task id="LOCAL-00001" summary="v1.0">
       <created>1562243519896</created>
@@ -574,7 +574,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="483507000" />
+    <option name="totallyTimeSpent" value="483957000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -587,16 +587,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6090469" visible="true" weight="0.13645943" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.60876626" visible="true" weight="0.13645943" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32897604" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32570806" />
-      <window_info id="npm" order="2" sideWeight="0.39095315" side_tool="true" visible="true" weight="0.13645943" />
+      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32897604" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32570806" />
+      <window_info active="true" id="npm" order="2" sideWeight="0.39123377" side_tool="true" visible="true" weight="0.13645943" />
       <window_info id="Structure" order="1" sideWeight="0.5027223" side_tool="true" weight="0.13751318" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.29956427" />
       <window_info id="Favorites" order="2" sideWeight="0.5027223" side_tool="true" weight="0.13751318" />
@@ -979,8 +978,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/FindUser/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="43" column="46" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
+        <state relative-caret-position="216">
+          <caret line="39" column="33" lean-forward="true" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
             <marker date="1572006964348" expanded="true" signature="1707:1765" ph="..." />
