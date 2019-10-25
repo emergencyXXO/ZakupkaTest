@@ -1,0 +1,11 @@
+.formControl {
+	width: calc(50% - 15px);
+	.error {
+		border: 1px solid red;
+	}
+	.errorMes {
+		color: red;
+		display: block;
+		margin-bottom: 15px;
+	}
+}

@@ -1,0 +1,44 @@
+header {
+	padding: 15px 0;
+	background-color: #000;
+
+	.header {
+		font-size: 24px;
+		color: #fff;
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0;
+	}
+	.logo {
+		width: 37px;
+		height: 59px;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		margin-right: 15px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.line {
+		justify-content: space-between;
+	}
+	.login,
+	.logout {
+		font-size: 18px;
+		text-decoration: none;
+		color: #fff;
+		span {
+			font-size: 18px;
+			color: #fff;
+		}
+	}
+	.logout {
+		margin-left: 45px;
+		cursor: pointer;
+	}
+	.admin_block {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+}
