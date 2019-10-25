@@ -12,6 +12,7 @@
 		align-items: center;
 		justify-content: space-between;
 	}
+
 	.users_list {
 		border-collapse: collapse;
 		margin-bottom: 40px;
@@ -22,5 +23,11 @@
 			font-size: 16px;
 			padding: 5px;
 		}
+	}
+}
+@media (max-width: 767px) {
+	.table_wrapper {
+		width: 100%;
+		overflow-x: scroll;
 	}
 }

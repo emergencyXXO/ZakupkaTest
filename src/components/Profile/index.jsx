@@ -41,52 +41,54 @@ let Profile = props => {
 						</button>
 					</div>
 				</div>
-				<table className={cls.users_list}>
-					<tbody>
-						<tr>
-							<td>ID</td>
-							<td>{props.UserData.id}</td>
-						</tr>
-						<tr>
-							<td>First Name</td>
-							<td>{props.UserData.first_name}</td>
-						</tr>
-						<tr>
-							<td>Last Name</td>
-							<td>{props.UserData.last_name}</td>
-						</tr>
-						<tr>
-							<td>Gender</td>
-							<td>{props.UserData.gender}</td>
-						</tr>
-						<tr>
-							<td>Dob</td>
-							<td>{props.UserData.dob}</td>
-						</tr>
-						<tr>
-							<td>Email</td>
-							<td>{props.UserData.email}</td>
-						</tr>
-						<tr>
-							<td>Phone</td>
-							<td>{props.UserData.phone}</td>
-						</tr>
-						<tr>
-							<td>Avatar</td>
-							<td>
-								<img src={props.UserData._links.avatar.href} alt="" />
-							</td>
-						</tr>
-						<tr>
-							<td>Address</td>
-							<td>{props.UserData.address}</td>
-						</tr>
-						<tr>
-							<td>Status</td>
-							<td>{props.UserData.status}</td>
-						</tr>
-					</tbody>
-				</table>
+				<div className={cls.table_wrapper}>
+					<table className={cls.users_list}>
+						<tbody>
+							<tr>
+								<td>ID</td>
+								<td>{props.UserData.id}</td>
+							</tr>
+							<tr>
+								<td>First Name</td>
+								<td>{props.UserData.first_name}</td>
+							</tr>
+							<tr>
+								<td>Last Name</td>
+								<td>{props.UserData.last_name}</td>
+							</tr>
+							<tr>
+								<td>Gender</td>
+								<td>{props.UserData.gender}</td>
+							</tr>
+							<tr>
+								<td>Dob</td>
+								<td>{props.UserData.dob}</td>
+							</tr>
+							<tr>
+								<td>Email</td>
+								<td>{props.UserData.email}</td>
+							</tr>
+							<tr>
+								<td>Phone</td>
+								<td>{props.UserData.phone}</td>
+							</tr>
+							<tr>
+								<td>Avatar</td>
+								<td>
+									<img src={props.UserData._links.avatar.href} alt="" />
+								</td>
+							</tr>
+							<tr>
+								<td>Address</td>
+								<td>{props.UserData.address}</td>
+							</tr>
+							<tr>
+								<td>Status</td>
+								<td>{props.UserData.status}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 			</div>
 		</>
 	);

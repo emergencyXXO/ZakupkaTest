@@ -45,7 +45,32 @@
 		border: 1px solid #fff;
 		color: #fff;
 		padding: 5px 10px;
+		outline: none;
 		margin-top: 15px;
 		font-size: 18px;
+	}
+}
+@media (max-width: 991px) {
+	.add_newUser__block {
+		padding: 0 15px;
+		padding-bottom: 40px;
+		padding-top: 20px;
+	}
+}
+@media (max-width: 767px) {
+	.add_newUser__block {
+		select {
+			max-width: 320px;
+			margin: 0 auto;
+			margin-top: 15px;
+			width: 100%;
+		}
+		button {
+			max-width: 320px;
+			width: 100%;
+			margin: 0 auto;
+			margin-top: 30px;
+			display: block;
+		}
 	}
 }

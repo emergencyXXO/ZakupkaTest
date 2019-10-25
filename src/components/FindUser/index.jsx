@@ -27,35 +27,35 @@ class FindUser extends React.PureComponent {
 							Add new user
 						</NavLink>
 					</div>
-					<table className={cls.users_list}>
-						<thead>
-							<tr>
-								<th className={`${cls.name}`}>Avatar</th>
-								<th className={`${cls.last_name}`}>Name</th>
-								<th className={`${cls.last_name}`}>Second name</th>
-								<th className={`${cls.email}`}>Email</th>
-								<th className={`${cls.phone}`}>Phone</th>
-								<th className={`${cls.website}`}>Website</th>
-								<th className={`${cls.navigation}`}>Navigation</th>
-							</tr>
-						</thead>
-						{this.props.UserData.map(el => (
-							<Users
-								{...this.props}
-								key={el.id}
-								id={el.id}
-								first_name={el.first_name}
-								last_name={el.last_name}
-								email={el.email}
-								phone={el.phone}
-								website={el.website}
-								link={el._links}
-								// getCurrentUseThunkCreator={this.props.getCurrentUseThunkCreator}
-								currentPage={this.props._meta.currentPage}
-								// deleteUserThunkCreator={this.props.deleteUserThunkCreator}
-							/>
-						))}
-					</table>
+					<div className={cls.tabble_wrapper}>
+						<table className={cls.users_list}>
+							<thead>
+								<tr>
+									<th className={`${cls.name}`}>Avatar</th>
+									<th className={`${cls.last_name}`}>Name</th>
+									<th className={`${cls.last_name}`}>Second name</th>
+									<th className={`${cls.email}`}>Email</th>
+									<th className={`${cls.phone}`}>Phone</th>
+									<th className={`${cls.website}`}>Website</th>
+									<th className={`${cls.navigation}`}>Navigation</th>
+								</tr>
+							</thead>
+							{this.props.UserData.map(el => (
+								<Users
+									{...this.props}
+									key={el.id}
+									id={el.id}
+									first_name={el.first_name}
+									last_name={el.last_name}
+									email={el.email}
+									phone={el.phone}
+									website={el.website}
+									link={el._links}
+									currentPage={this.props._meta.currentPage}
+								/>
+							))}
+						</table>
+					</div>
 					<Paginations
 						pageList={pages}
 						currentPage={this.props._meta.currentPage}

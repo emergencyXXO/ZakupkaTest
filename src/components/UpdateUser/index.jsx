@@ -1,5 +1,5 @@
 import React from 'react';
-import cls from './style.module.scss';
+import cls from '../AddNewUser/style.module.scss';
 import { Field, reduxForm } from 'redux-form';
 import { connect } from 'react-redux';
 import { Input, Textarea } from '../FormControl';
@@ -39,8 +39,8 @@ let UpdateUserForm = props => {
 			<div className={cls.add_newUser__block}>
 				<p className={cls.had}>Update user</p>
 				<form onSubmit={props.handleSubmit(onSubmit)}>
-					<Field name="first_name" component={Input} validate={[required]} placeholder="First Name" />
-					<Field name="last_name" component={Input} validate={[required]} placeholder="Last name" />
+					<Field name="first_name" component={Input} validate={[required]} placeholder="First Name*" />
+					<Field name="last_name" component={Input} validate={[required]} placeholder="Last name*" />
 					<Field name="gender" component="select" validate={[required]}>
 						<option selected value="male">
 							Male
@@ -49,8 +49,8 @@ let UpdateUserForm = props => {
 					</Field>
 					<Field name="dob" component={Input} placeholder="Date" />
 					<Field name="phone" component={Input} placeholder="Phone" />
-					<Field name="status" component={Input} validate={[required]} placeholder="Status" />
-					<Field name="email" component={Input} validate={[required]} placeholder="Email" />
+					<Field name="status" component={Input} validate={[required]} placeholder="Status*" />
+					<Field name="email" component={Input} validate={[required]} placeholder="Email*" />
 					<Field name="website" component={Input} placeholder="Website" />
 					<Field name="avatar" component={Input} placeholder="Avatar" />
 					<Field name="about" component={Input} placeholder="About" />

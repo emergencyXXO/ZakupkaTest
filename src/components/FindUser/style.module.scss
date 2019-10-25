@@ -23,3 +23,9 @@
 		}
 	}
 }
+@media (max-width: 991px) {
+	.tabble_wrapper {
+		width: 100%;
+		overflow-x: scroll;
+	}
+}
