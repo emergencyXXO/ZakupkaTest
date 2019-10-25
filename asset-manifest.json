@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/socnet/static/css/main.92619ae2.chunk.css",
-    "main.js": "/socnet/static/js/main.9cdb898d.chunk.js",
-    "main.js.map": "/socnet/static/js/main.9cdb898d.chunk.js.map",
-    "runtime~main.js": "/socnet/static/js/runtime~main.5989f925.js",
-    "runtime~main.js.map": "/socnet/static/js/runtime~main.5989f925.js.map",
-    "static/js/2.a2966240.chunk.js": "/socnet/static/js/2.a2966240.chunk.js",
-    "static/js/2.a2966240.chunk.js.map": "/socnet/static/js/2.a2966240.chunk.js.map",
-    "index.html": "/socnet/index.html",
-    "precache-manifest.67aa9abf66e2ff92928c418f1d322655.js": "/socnet/precache-manifest.67aa9abf66e2ff92928c418f1d322655.js",
-    "service-worker.js": "/socnet/service-worker.js",
-    "static/css/main.92619ae2.chunk.css.map": "/socnet/static/css/main.92619ae2.chunk.css.map"
+    "main.css": "/ZakupkaTest/static/css/main.92619ae2.chunk.css",
+    "main.js": "/ZakupkaTest/static/js/main.204b2559.chunk.js",
+    "main.js.map": "/ZakupkaTest/static/js/main.204b2559.chunk.js.map",
+    "runtime~main.js": "/ZakupkaTest/static/js/runtime~main.5fdb23de.js",
+    "runtime~main.js.map": "/ZakupkaTest/static/js/runtime~main.5fdb23de.js.map",
+    "static/js/2.a2966240.chunk.js": "/ZakupkaTest/static/js/2.a2966240.chunk.js",
+    "static/js/2.a2966240.chunk.js.map": "/ZakupkaTest/static/js/2.a2966240.chunk.js.map",
+    "index.html": "/ZakupkaTest/index.html",
+    "precache-manifest.ee70b35cebbe3fbdf1d65c9c04be3a75.js": "/ZakupkaTest/precache-manifest.ee70b35cebbe3fbdf1d65c9c04be3a75.js",
+    "service-worker.js": "/ZakupkaTest/service-worker.js",
+    "static/css/main.92619ae2.chunk.css.map": "/ZakupkaTest/static/css/main.92619ae2.chunk.css.map"
   }
 }
